@@ -38,20 +38,20 @@ export default class loading extends Phaser.Scene {
     
     
     preload() {
-        console.log("ci");
-        console.log(imgFilesName) ;
+        //console.log("ci");
+        //console.log(imgFilesName) ;
         
-        imgFilesName.forEach(fileName => {
-            const key = fileName.split('.').slice(0, -1).join('.');
-            this.load.image(key, `./src/assets/images/${fileName}`);
-        });
+        //imgFilesName.forEach(fileName => {
+            //const key = fileName.split('.').slice(0, -1).join('.');
+            //this.load.image(key, `./src/assets/images/${fileName}`);
+        //});
         
         // chargement de toutes les images du répertoire spritesheet
         spritesheetsFilesName.forEach(fileName => {
             const baseKey = fileName.split('.').slice(0, -1).join('.');
             const key = baseKey.replace(/_spritesheet$/, '');
             
-            console.log("fichier a charger : " + key + "sur fichier "+ fileName)
+            //console.log("fichier a charger : " + key + "sur fichier "+ fileName)
             
             this.load.image(key, `./src/assets/spritesheets/${fileName}`);
             
