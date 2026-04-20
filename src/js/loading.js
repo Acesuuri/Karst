@@ -12,10 +12,26 @@ import dialogBox from "./dialogBox.js";
 
 // extraction des éléments du fichier de configuration
 var { game: gameConfig, player: playerConfig, ennemis: ennemisConfig, spritesheetConfig: spritesheetRawConfig } = await fct.chargerConfig('./src/assets/config.txt');
-// liste des fichiers du répertoire image
-var imgFilesName = await fct.chargerImagesNames('./src/assets/images');
-// liste des fichiers du répertoire spritesheet
-var spritesheetsFilesName = await fct.loadFilelistFromDirectory('./src/assets/spritesheets') 
+// liste des fichiers du répertoire image (hardcoded pour éviter l'erreur 404)
+var imgFilesName = [
+    'portal.png',
+    'item_to_collect.png',
+    'item_to_collect_classic.png',
+    'item_to_collect_modern.png',
+    'item_to_collect_retro.png'
+];
+// liste des fichiers du répertoire spritesheet (hardcoded pour éviter l'erreur 404)
+var spritesheetsFilesName = [
+    'enemy_1_move_right_spritesheet.png',
+    'enemy_death.png',
+    'player_jump_right_spritesheet.png',
+    'player_move_right_spritesheet.png',
+    'player_shoot_right_spritesheet.png',
+    'player_stand_right_spritesheet.png',
+    'generateur_1.png',
+    'levier.png',
+    'acenseur_1.png'
+]; 
 
 
 export default class loading extends Phaser.Scene {
