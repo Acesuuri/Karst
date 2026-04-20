@@ -14,3 +14,4 @@ Made by Xlayte, Acenseur and Reyako
 - Augmenter la vitesse de déplacement sur les lianes
 - essayer d'animer les leviers et l'asenceur
 - essayer de rajouter une animation de morts aux ennemis
+- changer les touches pour qu'elles soient plus intuitives 
