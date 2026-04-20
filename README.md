@@ -1,2 +1,2 @@
 # Karst
-Karst is a simple game made with phaser
+Made by Xlayte, Acenseur and Reyako
