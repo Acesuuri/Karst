@@ -126,7 +126,7 @@ export default class loading extends Phaser.Scene {
         this.load.audio("son_win", "src/assets/sounds/son_win.mp3");
         this.load.audio("son_game", "src/assets/sounds/son_game.mp3");
         this.load.audio("son_intro", "src/assets/sounds/son_intro.mp3");
-        
+
         /* chargement des cartes */
         this.load.tilemapTiledJSON('map_recto', './src/assets/maps/Karst.json');
         this.load.image('tileset_image', './src/assets/maps/grande_tuilev2.png');
@@ -268,17 +268,7 @@ export default class loading extends Phaser.Scene {
             } else {
                 console.warn("Audio file 'son_bullet' not loaded properly.");
             }
-            if (this.cache.audio.exists("son_jump")) {
-                this.game.config.son_jump = this.sound.add("son_jump");
-            } else {
-                console.warn("Audio file 'son_jump' not loaded properly.");
-            }
-            if (this.cache.audio.exists("son_item")) {
-                this.game.config.son_item = this.sound.add("son_item");
-            } else {
-                console.warn("Audio file 'son_item' not loaded properly.");
-            }
-            
+                                    
             if (this.cache.audio.exists("son_game")) {
                 this.game.config.son_game = this.sound.add("son_game");
             }
@@ -295,14 +285,9 @@ export default class loading extends Phaser.Scene {
             } else {
                 console.warn("Audio file 'son_win' not loaded properly.");
             }
-            if (this.cache.audio.exists("son_game")) {
-                this.game.config.son_game = this.sound.add("son_game");
-            } else {
-                console.warn("Audio file 'son_game' not loaded properly.");
-            }
             
             if (this.cache.audio.exists("son_intro")) {
-                this.game.config.son_game = this.sound.add("son_intro");
+                this.game.config.son_intro = this.sound.add("son_intro");
             } else {
                 console.warn("Audio file 'son_intro' not loaded properly.");
             }

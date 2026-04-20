@@ -29,12 +29,38 @@ export default class accueil extends Phaser.Scene {
         // Initialiser le focus sur le premier bouton
         this.updateButtonSelection();
 
+        // Handle AudioContext autoplay restrictions
+        this.audioInitialized = false;
+        
+        // Add click/touch event to resume audio context
+        this.input.on('pointerdown', () => {
+            if (!this.audioInitialized) {
+                this.sound.context.resume().then(() => {
+                    this.audioInitialized = true;
+                    this.playIntroMusic();
+                });
+            }
+        });
+        
+        // Add keyboard event to resume audio context
+        this.input.keyboard.on('keydown', () => {
+            if (!this.audioInitialized) {
+                this.sound.context.resume().then(() => {
+                    this.audioInitialized = true;
+                    this.playIntroMusic();
+                });
+            }
+        });
+
         if (this.sound.get("son_win")) {
             this.sound.stopByKey("son_win");
         }
         if (this.sound.get("son_game_over")) {
             this.sound.stopByKey("son_game_over");
         }
+    }
+
+    playIntroMusic() {
         if (this.sound.get("son_intro")) {
             this.sound.play("son_intro", { loop: true });
         }
