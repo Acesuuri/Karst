@@ -79,18 +79,8 @@ export default class loading extends Phaser.Scene {
         this.load.image("screen_story", "src/assets/images/screen_story.png");
         this.load.image("screen_win", "src/assets/images/screen_win.png");
         this.load.image("screen_lose", "src/assets/images/screen_lose.png");
-        this.load.image("main_background", "src/assets/images/main_background.png");
-        this.load.image("main_background_over_parallax_effect", "src/assets/images/main_background_over_parallax_effect.png");
-        this.load.image("main_background_verso", "src/assets/images/main_background_verso.png");
-        this.load.image("main_background_verso_over_parallax_effect", "src/assets/images/main_background_verso_over_parallax_effect.png");
-        
         /* chargement des autres textures */
-        this.load.image("destination", "src/assets/images/destination.png");
         this.load.image("bullet", "src/assets/images/bullet.png");
-        this.load.image("item_to_collect", "src/assets/images/item_to_collect.png");
-        this.load.image("item_reset", "src/assets/images/item_reset.png");  
-        this.load.image("item_fly", "src/assets/images/item_fly.png");
-        this.load.image("item_shoot", "src/assets/images/item_shoot.png");
         this.load.image("levier1", "src/assets/images/levier1.png");
         this.load.image("panel0", "src/assets/images/panel0.png");
         this.load.image("panel1", "src/assets/images/panel1.png");
