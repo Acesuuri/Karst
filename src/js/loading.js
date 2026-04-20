@@ -12,14 +12,6 @@ import dialogBox from "./dialogBox.js";
 
 // extraction des éléments du fichier de configuration
 var { game: gameConfig, player: playerConfig, ennemis: ennemisConfig, spritesheetConfig: spritesheetRawConfig } = await fct.chargerConfig('./src/assets/config.txt');
-// liste des fichiers du répertoire image (hardcoded pour éviter l'erreur 404)
-var imgFilesName = [
-    'portal.png',
-    'item_to_collect.png',
-    'item_to_collect_classic.png',
-    'item_to_collect_modern.png',
-    'item_to_collect_retro.png'
-];
 // liste des fichiers du répertoire spritesheet (hardcoded pour éviter l'erreur 404)
 var spritesheetsFilesName = [
     'enemy_1_move_right_spritesheet.png',
