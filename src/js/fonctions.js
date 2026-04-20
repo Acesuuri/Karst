@@ -31,31 +31,24 @@ export async function loadFilelistFromDirectory(directory) {
 
 
 export async function chargerImagesNames(directory) {
-    return new Promise((resolve, reject) => {
-        fetch(directory)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Erreur lors du chargement du répertoire : " + response.statusText);
-                }
-                return response.text();
-            })
-            .then(html => {
-                var parser = new DOMParser();
-                var doc = parser.parseFromString(html, "text/html");
-                console.log(doc);
-                var files = Array.from(doc.querySelectorAll("a"))
-                    .map(link => link.getAttribute("href"))
-                    .map(name => name.split('/').pop())
-                    .filter(name => name.startsWith( "portal") || name.startsWith("item"))
-                  
-                resolve(files);
-            })
-            .catch(error => {
-                reject(error);
-            });
+    // On ne "fetch" plus le répertoire, on définit la liste manuellement
+    return new Promise((resolve) => {
+        const fichiers = [
+            "portal_1.png",
+            "portal_2.png",
+            "item_key.png",
+            "item_potion.png"
+            // Ajoute ici TOUS les noms de fichiers qui commencent par "portal" ou "item"
+        ];
+        
+        // On simule le filtrage que tu faisais avant
+        const filteredFiles = fichiers.filter(name => 
+            name.startsWith("portal") || name.startsWith("item")
+        );
+        
+        resolve(filteredFiles);
     });
 }
-
 
 export async function chargerConfig(configFile) {
     return new Promise((resolve, reject) => {
