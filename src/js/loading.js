@@ -89,10 +89,6 @@ export default class loading extends Phaser.Scene {
         this.load.image("bullet", "src/assets/images/bullet.png");
         this.load.image("item_to_collect", "src/assets/images/item_to_collect.png");
         this.load.image("item_reset", "src/assets/images/item_reset.png");  
-        this.load.image("item_jump", "src/assets/images/item_jump.png");  
-        this.load.image("item_double_jump", "src/assets/images/item_double_jump.png");
-        this.load.image("item_triple_jump", "src/assets/images/item_triple_jump.png");
-        this.load.image("item_wall_jump", "src/assets/images/item_wall_jump.png");
         this.load.image("item_fly", "src/assets/images/item_fly.png");
         this.load.image("item_shoot", "src/assets/images/item_shoot.png");
         this.load.image("levier1", "src/assets/images/levier1.png");
@@ -117,8 +113,6 @@ export default class loading extends Phaser.Scene {
         
         /* chargement des sons */
         this.load.audio("son_bullet", "src/assets/sounds/son_bullet.mp3");
-        this.load.audio("son_jump", "src/assets/sounds/son_jump.mp3");
-        this.load.audio("son_item", "src/assets/sounds/son_item.mp3");
         this.load.audio("son_lever", "src/assets/sounds/son_lever.mp3");
         this.load.audio("son_game_over", "src/assets/sounds/son_game_over.mp3");
         this.load.audio("son_win", "src/assets/sounds/son_win.mp3");
