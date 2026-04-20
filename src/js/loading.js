@@ -23,6 +23,32 @@ var spritesheetsFilesName = [
     'generateur_1.png',
     'levier.png',
     'acenseur_1.png'
+];
+
+// liste des fichiers du répertoire images (hardcoded pour éviter l'erreur 404)
+var imgFilesName = [
+    'acenseur.png',
+    'bullet.png',
+    'button_back.png',
+    'button_controls.png',
+    'button_credits.png',
+    'button_play.png',
+    'button_play2.png',
+    'coeur.png',
+    'item_hearth.png',
+    'levier1.png',
+    'panel0.png',
+    'panel1.png',
+    'panel2.png',
+    'panel3.png',
+    'panel4.png',
+    'panel5.png',
+    'screen_controls.png',
+    'screen_credits.png',
+    'screen_lose.png',
+    'screen_story.png',
+    'screen_welcome.png',
+    'screen_win.png'
 ]; 
 
 
