@@ -16,3 +16,4 @@ Made by Xlayte, Acenseur and Reyako
 - [ ] essayer de rajouter une animation de morts aux ennemis
 - [ ] changer les touches pour qu'elles soient plus intuitives
 - [ ] améliorer le titre sur le menu pour une meilleure cohérence graphique
+- [ ] Augmenter la hauteur de la tilemap pour qu'on ne voit pas le bout au spawn
