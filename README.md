@@ -8,6 +8,7 @@ Made by Xlayte, Acenseur and Reyako
 - [ ] Tuile trop haute pour sauter dessus
 - [ ] Champignons ne doivent plus être grimpables
 - [ ] Saut possible après une chute
+- [ ] double saut cursed
 
     
 **Modifications à faire sur le jeu :**
@@ -17,3 +18,4 @@ Made by Xlayte, Acenseur and Reyako
 - [ ] changer les touches pour qu'elles soient plus intuitives
 - [ ] améliorer le titre sur le menu pour une meilleure cohérence graphique
 - [ ] Augmenter la hauteur de la tilemap pour qu'on ne voit pas le bout au spawn
+- [ ] augmenter la taille de l'HUD
